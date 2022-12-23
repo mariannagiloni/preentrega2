@@ -1,5 +1,44 @@
 .servicios{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:flex-start;
+    padding: 50px;
+    margin: 20px 5px 10px 5px;
+}
+.academia2 {
+    grid-area: academia2;
+    font-weight: bold;
+}
+.descripcionAcademia {
+    grid-area: descripcionAcademia;
+    align-self: center;
+    @include sizes (450px, 100px)
+}
+.fotoA {
+    grid-area: fotoA;
+}
+.listaAcademia {
+    grid-area: listaAcademia;
+    list-style: c;
+}
+.inscribirse{
+    grid-area: inscribirse;
+}
+
+.mentoria2{
+    grid-area: mentoria2;
+    font-weight: bold;
+}
+.descripcionMentoria{
+    grid-area: descripcionMentoria;
+    @include sizes (450px, 100px)
+}
+.fotoMentoria{
+    grid-area: fotoMentoria;
+}
+.listaMentoria{
+    grid-area: listaMentoria;
+}
+.inscribir{
+    grid-area: inscribir;
 }

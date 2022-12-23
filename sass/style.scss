@@ -1,9 +1,13 @@
 @import "variablesGlobales";
-@import "fuentes";
 @import "operaciones";
+@import "fuentes";
 @import "generales";
 @import "servicios";
+@import "responsiveServicios";
 @import "contacto";
+@import "tips";
+@import "responsiveTips";
+
 
 .dicen{
     grid-area: dicen;

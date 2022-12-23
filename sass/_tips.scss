@@ -1,0 +1,40 @@
+.tips{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.humanizar {
+    grid-area: humanizar;
+    font-weight: bold;
+}
+.videoHumanizar{
+    grid-area: videoHumanizar;
+}
+.pHumanizar{
+    grid-area: pHumanizar;
+    @include sizes (450px, 250px);
+}
+
+.datoCliente{
+    grid-area: datoCliente;
+    font-weight: bold;
+}
+.videoCliente{
+    grid-area: videoCliente;
+}
+.listaCliente{
+    grid-area: listaCliente;
+    @include sizes (450px, 250px);
+    font-size: 14px;
+}
+
+.navidad{
+    grid-area: navidad;
+    font-weight: bold;
+}
+.videoNavidad{
+    grid-area: videoNavidad;
+}
+.pNavidad{
+    grid-area: pNavidad;
+    @include sizes (450px, 250px);
+}

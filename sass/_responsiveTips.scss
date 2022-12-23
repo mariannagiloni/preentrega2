@@ -1,0 +1,84 @@
+.video1{
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    margin: 50px;
+    align-items: start;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    "humanizar"
+    "pHumanizar"
+    "videoHumanizar";
+    .videoHumanizar{
+        @include sizes (399px, 150px)
+    }
+    @media (min-width: 500px){
+        .videoHumanizar{
+            @include sizes (499px, 250px)
+        }
+    }
+    @media (min-width: 1024px){
+    grid-template-areas: 
+    "humanizar videoHumanizar"
+    "pHumanizar videoHumanizar";
+    @include sizes (1500px, 500px);
+    }
+}
+.video2{
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    margin: 50px;
+    align-items: start;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    "datoCliente"
+    "listaCliente"
+    "videoCliente";
+    .videoCliente{
+        @include sizes (399px, 150px);
+    }
+    @media (min-width: 500px){
+        .videoCliente{
+            @include sizes (499px, 250px)
+        }
+    }
+    @media (min-width: 1024px){
+    grid-template-areas: 
+    "videoCliente datoCliente"
+    "videoCliente listaCliente";
+    @include sizes (1500px, 500px);
+    }
+}
+.video3{
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    margin: 50px;
+    align-items: start;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    grid-template-areas:
+    "navidad"
+    "pNavidad"
+    "videoNavidad";    
+    .videoNavidad{
+        @include sizes (399px, 150px);
+    }
+    @media (min-width: 500px){
+        .videoNavidad{
+            @include sizes (499px, 250px)
+        }
+    }
+    @media (min-width: 1024px){
+    grid-template-areas: 
+    "navidad videoNavidad"
+    "pNavidad videoNavidad"; 
+    @include sizes (1500px, 500px);
+    }
+}

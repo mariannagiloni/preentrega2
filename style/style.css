@@ -10,6 +10,11 @@ ul li {
   padding: 10px;
 }
 
+.logoimg {
+  width: 100px;
+  height: 50px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -17,10 +22,11 @@ a {
 
 h1 {
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 main {
-  font-family: "Lato", sans-serif;
+  font-family: "poppins", sans-serif;
   padding: 10px;
   margin: 5px;
   text-align: center;
@@ -52,6 +58,97 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 50px;
+  margin: 20px 5px 10px 5px;
+}
+
+.academia2 {
+  grid-area: academia2;
+  font-weight: bold;
+}
+
+.descripcionAcademia {
+  grid-area: descripcionAcademia;
+  align-self: center;
+  width: 450px;
+  height: 100px;
+}
+
+.fotoA {
+  grid-area: fotoA;
+}
+
+.listaAcademia {
+  grid-area: listaAcademia;
+  list-style: c;
+}
+
+.inscribirse {
+  grid-area: inscribirse;
+}
+
+.mentoria2 {
+  grid-area: mentoria2;
+  font-weight: bold;
+}
+
+.descripcionMentoria {
+  grid-area: descripcionMentoria;
+  width: 450px;
+  height: 100px;
+}
+
+.fotoMentoria {
+  grid-area: fotoMentoria;
+}
+
+.listaMentoria {
+  grid-area: listaMentoria;
+}
+
+.inscribir {
+  grid-area: inscribir;
+}
+
+.academia {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  grid-template-areas: "academia2" "fotoA" "descripcionAcademia" "listaAcademia" "inscribirse";
+}
+.academia .descripcionAcademia {
+  width: 350px;
+  height: 100px;
+}
+@media (min-width: 1024px) {
+  .academia {
+    grid-template-areas: "academia2           fotoA" "descripcionAcademia fotoA" "listaAcademia       fotoA" "inscribirse         fotoA";
+  }
+}
+
+.mentoria {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-template-areas: "mentoria2" "fotoMentoria" "descripcionMentoria" "listaMentoria" "inscribir";
+}
+.mentoria .descripcionMentoria {
+  width: 350px;
+  height: 100px;
+}
+@media (min-width: 1024px) {
+  .mentoria {
+    grid-template-areas: "fotoMentoria mentoria2" "fotoMentoria descripcionMentoria" "fotoMentoria listaMentoria" ". inscribir";
+  }
 }
 
 .contacto {
@@ -64,6 +161,144 @@ footer {
 .contacto .llamar {
   width: 250px;
   height: 50px;
+}
+
+.tips {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.humanizar {
+  grid-area: humanizar;
+  font-weight: bold;
+}
+
+.videoHumanizar {
+  grid-area: videoHumanizar;
+}
+
+.pHumanizar {
+  grid-area: pHumanizar;
+  width: 450px;
+  height: 250px;
+}
+
+.datoCliente {
+  grid-area: datoCliente;
+  font-weight: bold;
+}
+
+.videoCliente {
+  grid-area: videoCliente;
+}
+
+.listaCliente {
+  grid-area: listaCliente;
+  width: 450px;
+  height: 250px;
+  font-size: 14px;
+}
+
+.navidad {
+  grid-area: navidad;
+  font-weight: bold;
+}
+
+.videoNavidad {
+  grid-area: videoNavidad;
+}
+
+.pNavidad {
+  grid-area: pNavidad;
+  width: 450px;
+  height: 250px;
+}
+
+.video1 {
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  margin: 50px;
+  align-items: start;
+  justify-items: center;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  grid-template-areas: "humanizar" "pHumanizar" "videoHumanizar";
+}
+.video1 .videoHumanizar {
+  width: 399px;
+  height: 150px;
+}
+@media (min-width: 500px) {
+  .video1 .videoHumanizar {
+    width: 499px;
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .video1 {
+    grid-template-areas: "humanizar videoHumanizar" "pHumanizar videoHumanizar";
+    width: 1500px;
+    height: 500px;
+  }
+}
+
+.video2 {
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  margin: 50px;
+  align-items: start;
+  justify-items: center;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  grid-template-areas: "datoCliente" "listaCliente" "videoCliente";
+}
+.video2 .videoCliente {
+  width: 399px;
+  height: 150px;
+}
+@media (min-width: 500px) {
+  .video2 .videoCliente {
+    width: 499px;
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .video2 {
+    grid-template-areas: "videoCliente datoCliente" "videoCliente listaCliente";
+    width: 1500px;
+    height: 500px;
+  }
+}
+
+.video3 {
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  margin: 50px;
+  align-items: start;
+  justify-items: center;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  grid-template-areas: "navidad" "pNavidad" "videoNavidad";
+}
+.video3 .videoNavidad {
+  width: 399px;
+  height: 150px;
+}
+@media (min-width: 500px) {
+  .video3 .videoNavidad {
+    width: 499px;
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .video3 {
+    grid-template-areas: "navidad videoNavidad" "pNavidad videoNavidad";
+    width: 1500px;
+    height: 500px;
+  }
 }
 
 .dicen {

@@ -1,0 +1,51 @@
+.academia{
+    .descripcionAcademia{
+        @include sizes (350px, 100px);
+    }
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    grid-template-areas: 
+    "academia2"
+    "fotoA"
+    "descripcionAcademia"
+    "listaAcademia"
+    "inscribirse";
+    @media (min-width: 1024px){
+    grid-template-areas: 
+    "academia2           fotoA"
+    "descripcionAcademia fotoA"
+    "listaAcademia       fotoA"
+    "inscribirse         fotoA";
+    }
+}
+.mentoria{
+    .descripcionMentoria{
+        @include sizes (350px, 100px);
+    }
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-areas: 
+    "mentoria2"
+    "fotoMentoria"
+    "descripcionMentoria"
+    "listaMentoria"
+    "inscribir";
+    @media (min-width: 1024px){
+    grid-template-areas: 
+    "fotoMentoria mentoria2"
+    "fotoMentoria descripcionMentoria"
+    "fotoMentoria listaMentoria"
+    ". inscribir";
+    }
+}
