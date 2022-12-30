@@ -45,13 +45,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 300px;
   padding: 5px;
   margin: 5px;
   gap: 20px;
-  color: rgb(121, 116, 116);
-  font-weight: bold;
+  color: black;
+  font-size: small;
 }
 
 .servicios {
