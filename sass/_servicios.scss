@@ -1,10 +1,12 @@
 .servicios{
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
     padding: 50px;
     margin: 20px 5px 10px 5px;
 }
+
+
 .academia2 {
     grid-area: academia2;
     font-weight: bold;
@@ -31,14 +33,15 @@
 }
 .descripcionMentoria{
     grid-area: descripcionMentoria;
+    padding: 20px;
+    margin: 20px;
     @include sizes (450px, 100px)
+    
 }
 .fotoMentoria{
     grid-area: fotoMentoria;
 }
-.listaMentoria{
-    grid-area: listaMentoria;
-}
+
 .inscribir{
     grid-area: inscribir;
 }

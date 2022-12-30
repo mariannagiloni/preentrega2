@@ -1,0 +1,90 @@
+.tituloPrecio{
+    grid-area: tituloPrecio;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.precio1{
+    grid-area: precio1;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: black;
+    gap: 20px;
+
+}
+.precio2{
+    grid-area: precio2;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border: solid;
+    border-color: black;
+    gap: 20px;
+}
+.precio3{
+    grid-area: precio3;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: black;
+    gap: 20px;
+    
+}
+.precio{
+    display: grid;
+        grid-template-areas: 
+        "tituloPrecio"
+        "precio1" 
+        "precio2" 
+        "precio3";
+        color: rgb(67, 68, 68);
+        margin: 0% 5% 0% 5%;
+    }
+
+@media(min-width: 500px){
+    .precio{
+        display: grid;
+        grid-template-areas: 
+        "tituloPrecio"
+        "precio1" 
+        "precio2" 
+        "precio3";
+        margin: 0% 20% 0% 20%;
+        justify-content: center;
+        }
+        .precio1{
+            width: 499px;
+            height: 324px;
+        }
+        .precio2{
+            width: 499px;
+            height: 324px;
+        }
+        .precio3{
+            width: 499px;
+            height: 324px;
+        }
+}
+@media(min-width: 1187px){
+    .precio{
+        display: grid;
+        grid-template-areas: 
+        "tituloPrecio tituloPrecio tituloPrecio"
+        "precio1 precio2 precio3";
+        grid-template-columns: 33% 33% 33%;
+        justify-items: center;
+        margin: 0% 5% 0% 5%;
+    }
+    .precio1{
+        width: 330px;
+        height: 450px;
+    }
+    .precio2{
+        width: 330px;
+        height: 450px;
+    }
+    .precio3{
+        width: 330px;
+        height: 450px;
+    }
+}

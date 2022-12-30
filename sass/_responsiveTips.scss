@@ -11,6 +11,7 @@
     "humanizar"
     "pHumanizar"
     "videoHumanizar";
+    gap: 20px;
     .videoHumanizar{
         @include sizes (399px, 150px)
     }
@@ -39,6 +40,8 @@
     "datoCliente"
     "listaCliente"
     "videoCliente";
+    height: 800px;
+    grid-template-rows: auto 399px 300px;
     .videoCliente{
         @include sizes (399px, 150px);
     }
@@ -48,6 +51,7 @@
         }
     }
     @media (min-width: 1024px){
+    margin-top: 150px;
     grid-template-areas: 
     "videoCliente datoCliente"
     "videoCliente listaCliente";
@@ -67,6 +71,7 @@
     "navidad"
     "pNavidad"
     "videoNavidad";    
+    gap: 20px;
     .videoNavidad{
         @include sizes (399px, 150px);
     }
