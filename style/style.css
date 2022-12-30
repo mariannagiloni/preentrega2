@@ -194,6 +194,7 @@ footer {
 .humanizar {
   grid-area: humanizar;
   font-weight: bold;
+  text-align: center;
 }
 
 .videoHumanizar {
@@ -202,13 +203,12 @@ footer {
 
 .pHumanizar {
   grid-area: pHumanizar;
-  width: 450px;
-  height: 250px;
 }
 
 .datoCliente {
   grid-area: datoCliente;
   font-weight: bold;
+  text-align: center;
 }
 
 .videoCliente {
@@ -217,14 +217,13 @@ footer {
 
 .listaCliente {
   grid-area: listaCliente;
-  width: 450px;
-  height: 250px;
   font-size: 14px;
 }
 
 .navidad {
   grid-area: navidad;
   font-weight: bold;
+  text-align: center;
 }
 
 .videoNavidad {
@@ -239,30 +238,38 @@ footer {
 
 .video1 {
   display: grid;
+  height: 800px;
   font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  margin: 50px;
+  padding: 5px;
+  margin: 5px;
   align-items: start;
   justify-items: center;
   align-content: space-evenly;
   justify-content: space-evenly;
   grid-template-areas: "humanizar" "pHumanizar" "videoHumanizar";
-  gap: 20px;
+  gap: 5px;
+}
+.video1 .pHumanizar {
+  width: 300px;
+  height: 350px;
 }
 .video1 .videoHumanizar {
-  width: 399px;
-  height: 150px;
+  width: 330px;
+  height: 136px;
 }
 @media (min-width: 500px) {
+  .video1 .pHumanizar {
+    width: 450px;
+    height: 250px;
+  }
   .video1 .videoHumanizar {
-    width: 499px;
+    width: 490px;
     height: 250px;
   }
 }
 @media (min-width: 1024px) {
   .video1 {
     grid-template-areas: "humanizar videoHumanizar" "pHumanizar videoHumanizar";
-    width: 1500px;
     height: 500px;
   }
 }
@@ -270,21 +277,28 @@ footer {
 .video2 {
   display: grid;
   font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  margin: 50px;
+  padding: 5px;
+  margin: 5px;
   align-items: start;
   justify-items: center;
   align-content: space-evenly;
   justify-content: space-evenly;
   grid-template-areas: "datoCliente" "listaCliente" "videoCliente";
-  height: 800px;
-  grid-template-rows: auto 399px 300px;
+  height: 1000px;
+}
+.video2 .listaCliente {
+  width: 300px;
+  height: 550px;
 }
 .video2 .videoCliente {
-  width: 399px;
-  height: 150px;
+  width: 330px;
+  height: 136px;
 }
 @media (min-width: 500px) {
+  .video2 .listaCliente {
+    width: 450px;
+    height: 250px;
+  }
   .video2 .videoCliente {
     width: 499px;
     height: 250px;
@@ -292,14 +306,13 @@ footer {
 }
 @media (min-width: 1024px) {
   .video2 {
-    margin-top: 150px;
     grid-template-areas: "videoCliente datoCliente" "videoCliente listaCliente";
-    width: 1500px;
-    height: 500px;
+    height: 750px;
   }
 }
 
 .video3 {
+  height: 790px;
   display: grid;
   font-family: "Montserrat", sans-serif;
   padding: 10px;
@@ -311,11 +324,22 @@ footer {
   grid-template-areas: "navidad" "pNavidad" "videoNavidad";
   gap: 20px;
 }
+.video3 .pNavidad {
+  width: 300px;
+  height: 250px;
+}
 .video3 .videoNavidad {
-  width: 399px;
-  height: 150px;
+  width: 330px;
+  height: 136px;
 }
 @media (min-width: 500px) {
+  .video3 {
+    height: 800px;
+  }
+  .video3 .pNavidad {
+    width: 450px;
+    height: 250px;
+  }
   .video3 .videoNavidad {
     width: 499px;
     height: 250px;
@@ -324,7 +348,6 @@ footer {
 @media (min-width: 1024px) {
   .video3 {
     grid-template-areas: "navidad videoNavidad" "pNavidad videoNavidad";
-    width: 1500px;
     height: 500px;
   }
 }

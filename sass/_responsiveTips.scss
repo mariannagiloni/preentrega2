@@ -1,8 +1,9 @@
 .video1{
     display: grid;
+    height: 800px;
     font-family: "Montserrat", sans-serif;
-    padding: 10px;
-    margin: 50px;
+    padding: 5px;
+    margin: 5px;
     align-items: start;
     justify-items: center;
     align-content: space-evenly;
@@ -11,27 +12,33 @@
     "humanizar"
     "pHumanizar"
     "videoHumanizar";
-    gap: 20px;
+    gap: 5px;
+    .pHumanizar{
+        @include sizes (300px, 350px);
+    }
     .videoHumanizar{
-        @include sizes (399px, 150px)
+        @include sizes (330px, 136px);
     }
     @media (min-width: 500px){
+        .pHumanizar{
+            @include sizes (450px, 250px);
+        }
         .videoHumanizar{
-            @include sizes (499px, 250px)
+            @include sizes (490px, 250px);
         }
     }
     @media (min-width: 1024px){
     grid-template-areas: 
     "humanizar videoHumanizar"
     "pHumanizar videoHumanizar";
-    @include sizes (1500px, 500px);
+    height: 500px;
     }
 }
 .video2{
     display: grid;
     font-family: "Montserrat", sans-serif;
-    padding: 10px;
-    margin: 50px;
+    padding: 5px;
+    margin: 5px;
     align-items: start;
     justify-items: center;
     align-content: space-evenly;
@@ -40,25 +47,30 @@
     "datoCliente"
     "listaCliente"
     "videoCliente";
-    height: 800px;
-    grid-template-rows: auto 399px 300px;
+    height: 1000px;
+    .listaCliente{
+        @include sizes (300px, 550px);
+    }
     .videoCliente{
-        @include sizes (399px, 150px);
+        @include sizes (330px, 136px);
     }
     @media (min-width: 500px){
+        .listaCliente{
+        @include sizes (450px, 250px);
+        }
         .videoCliente{
-            @include sizes (499px, 250px)
+            @include sizes (499px, 250px);
         }
     }
     @media (min-width: 1024px){
-    margin-top: 150px;
     grid-template-areas: 
     "videoCliente datoCliente"
     "videoCliente listaCliente";
-    @include sizes (1500px, 500px);
+    height: 750px;
     }
 }
 .video3{
+    height: 790px;
     display: grid;
     font-family: "Montserrat", sans-serif;
     padding: 10px;
@@ -72,18 +84,25 @@
     "pNavidad"
     "videoNavidad";    
     gap: 20px;
+    .pNavidad{
+        @include sizes (300px, 250px);
+    }
     .videoNavidad{
-        @include sizes (399px, 150px);
+        @include sizes (330px, 136px);
     }
     @media (min-width: 500px){
+    height: 800px;
+        .pNavidad{
+            @include sizes (450px, 250px);
+        }
         .videoNavidad{
-            @include sizes (499px, 250px)
+            @include sizes (499px, 250px);
         }
     }
     @media (min-width: 1024px){
     grid-template-areas: 
     "navidad videoNavidad"
     "pNavidad videoNavidad"; 
-    @include sizes (1500px, 500px);
+    height: 500px;
     }
 }

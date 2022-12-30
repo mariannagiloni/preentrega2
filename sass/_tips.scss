@@ -5,31 +5,33 @@
 .humanizar {
     grid-area: humanizar;
     font-weight: bold;
+    text-align: center;
+
 }
 .videoHumanizar{
     grid-area: videoHumanizar;
 }
 .pHumanizar{
     grid-area: pHumanizar;
-    @include sizes (450px, 250px);
 }
 
 .datoCliente{
     grid-area: datoCliente;
     font-weight: bold;
+    text-align: center;
 }
 .videoCliente{
     grid-area: videoCliente;
 }
 .listaCliente{
     grid-area: listaCliente;
-    @include sizes (450px, 250px);
     font-size: 14px;
 }
 
 .navidad{
     grid-area: navidad;
     font-weight: bold;
+    text-align: center;
 }
 .videoNavidad{
     grid-area: videoNavidad;
