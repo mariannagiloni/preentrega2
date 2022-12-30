@@ -2,6 +2,9 @@
     .descripcionAcademia{
         @include sizes (350px, 100px);
     }
+    .fotoA{
+        @include sizes (350px, 240px);
+    }
     gap: 50px;
     display: grid;
     align-content: center;
@@ -21,6 +24,9 @@
     "listaAcademia"
     "inscribirse";
     @media (min-width: 1024px){
+    .fotoA{
+        @include sizes (450px, 308px);
+    }
     gap: 10px;
     grid-template-areas: 
     "academia2           fotoA"
@@ -31,6 +37,9 @@
     }
 }
 .mentoria{
+    .fotoMentoria{
+        @include sizes (330px, 136px);
+    }
     display: grid;
     align-content: center;
     justify-content: space-evenly;
@@ -49,6 +58,9 @@
     "listaMentoria"
     "inscribir";
     @media (min-width: 1024px){
+    .fotoMentoria{
+        @include sizes (390px, 136px);
+    }
     grid-template-areas: 
     "fotoMentoria mentoria2"
     "fotoMentoria descripcionMentoria"

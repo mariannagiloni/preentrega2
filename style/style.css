@@ -70,8 +70,8 @@ footer {
 .descripcionAcademia {
   grid-area: descripcionAcademia;
   align-self: center;
-  width: 450px;
-  height: 100px;
+  width: 300px;
+  height: 116px;
 }
 
 .fotoA {
@@ -96,7 +96,7 @@ footer {
   grid-area: descripcionMentoria;
   padding: 20px;
   margin: 20px;
-  width: 450px;
+  width: 300px;
   height: 100px;
 }
 
@@ -127,11 +127,19 @@ footer {
   width: 350px;
   height: 100px;
 }
+.academia .fotoA {
+  width: 350px;
+  height: 240px;
+}
 @media (min-width: 1024px) {
   .academia {
     gap: 10px;
     grid-template-areas: "academia2           fotoA" "descripcionAcademia fotoA" "listaAcademia       fotoA" "inscribirse         fotoA";
     height: 800px;
+  }
+  .academia .fotoA {
+    width: 450px;
+    height: 308px;
   }
 }
 
@@ -149,12 +157,20 @@ footer {
   height: 800px;
   grid-template-areas: "mentoria2" "fotoMentoria" "descripcionMentoria" "listaMentoria" "inscribir";
 }
+.mentoria .fotoMentoria {
+  width: 330px;
+  height: 136px;
+}
 @media (min-width: 1024px) {
   .mentoria {
     grid-template-areas: "fotoMentoria mentoria2" "fotoMentoria descripcionMentoria" "fotoMentoria listaMentoria" ". inscribir";
     align-content: stretch;
     gap: 5px;
     height: 600px;
+  }
+  .mentoria .fotoMentoria {
+    width: 390px;
+    height: 136px;
   }
 }
 
